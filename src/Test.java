@@ -8,6 +8,7 @@ public class Test {
         addingMachine.subtract(2);
         addingMachine.add(5);
         System.out.println(addingMachine);
+        System.out.println(addingMachine.getTotal());
 
         addingMachine.clear();
         System.out.println(addingMachine);

@@ -1,1 +1,3 @@
-cse360assignment02
+# cse360assignment02
+
+Practicing git for CSE360.

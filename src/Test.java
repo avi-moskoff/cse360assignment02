@@ -11,7 +11,7 @@ public class Test {
 
         addingMachine.clear();
         System.out.println(addingMachine);
-        
+
         addingMachine.add(2);
         System.out.println(addingMachine);
     }

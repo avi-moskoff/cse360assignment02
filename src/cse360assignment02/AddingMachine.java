@@ -4,40 +4,55 @@ public class AddingMachine {
     private int total;
     private String history;
 
-    public AddingMachine () {
+    /**
+     * Constructor
+     */
+    public AddingMachine() {
         total = 0;  // not needed - included for clarity
-        history = "";
+        history = "0";
     }
 
     /**
      * Gets the total
+     *
      * @return the total
      */
-    public int getTotal () {
+    public int getTotal() {
         return total;
     }
 
     /**
      * Add to total
+     *
      * @param value the value to add to the total
      */
-    public void add (int value) {
+    public void add(int value) {
         total += value;
-        history += "," + value;
+        history += " + " + value;
     }
 
     /**
      * Subtract from total
+     *
      * @param value the value to subtract from total
      */
-    public void subtract (int value) {
+    public void subtract(int value) {
         total -= value;
+        history += " - " + value;
     }
 
-    public String toString () {
-        return "";
+    /**
+     * @return a history of the transactions made by the adding machine.
+     */
+    public String toString() {
+        return history;
     }
 
+    /**
+     * Clears the memory
+     */
     public void clear() {
+        total = 0;
+        history = "0";
     }
 }
